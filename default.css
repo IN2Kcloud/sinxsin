@@ -66,3 +66,10 @@ table {
 .s-tit {
 	padding: 0.3em 0;
 }
+.main-copy-wrap {
+	font-weight: 200;
+	color: #f1f1f1;
+	font-family: 'Blackout';
+	-webkit-text-stroke: 0.1px #171010;
+    
+}
