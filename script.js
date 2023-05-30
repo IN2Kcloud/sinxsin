@@ -123,16 +123,3 @@ document.querySelector('.loading').addEventListener('transitionend', (e) => {
 });
 
 // window.history.scrollRestoration = "manual"; // 새로고침 시 처음으로
-
-
-document.addEventListener('mousemove', parallax);
-function parallax(e) {
-  document.querySelectorAll(".mm").forEach(function(move) {
-    var moving_value = move.getAttribute("data-value");
-    var x = (e.clientX - window.innerWidth / 2) * moving_value / 100;
-    var y = (e.clientY - window.innerHeight / 2) * moving_value / 100;
-    var z = Math.abs((e.clientX - window.innerWidth / 2) * (e.clientY - window.innerHeight / 2)) * moving_value / 100000;
-
-    move.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
-  });
-}
