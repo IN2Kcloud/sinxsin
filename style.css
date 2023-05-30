@@ -54,10 +54,6 @@ header h1 a {
 	background: #171010;
 }
 
-.mm{
-  animation: animate 3s ease-out;
-}
-
 canvas {
   position: fixed;
   left: 50%;
