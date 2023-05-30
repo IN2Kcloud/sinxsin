@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const canvas = document.getElementById("cyber-intro");
+const canvas = document.getElementById("sin-intro");
 const context = canvas.getContext("2d");
 
 canvas.width = 1920;
@@ -95,8 +95,8 @@ gsap.timeline({
     // markers: true, // 개발가이드선
   }
 })
-  // .to('#cyber-intro', { top: -(window.innerHeight * 1.3) })
-  .to('#cyber-intro', { opacity: 0 })
+  // .to('#sin-intro', { top: -(window.innerHeight * 1.3) })
+  .to('#sin-intro', { opacity: 0 })
 
 gsap.timeline({
   scrollTrigger: {
