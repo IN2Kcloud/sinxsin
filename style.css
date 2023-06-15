@@ -42,7 +42,7 @@ header h1 a {
   margin-left: auto;
 }
 
-.header-right .notice {
+.header-right {
   text-align: right;
 }
 
@@ -187,36 +187,6 @@ section {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
-}
-
-.roadmap {
-  width: 90%;
-  max-width: 1400px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4rem 1rem 10rem;
-}
-
-.roadmap-con {
-  width: 100%;
-  text-align: left;
-  border-radius: 0.7rem;
-  margin: 0.5rem;
-  padding: 1.5rem 2rem;
-  background: #fff;
-  color: #171010;
-}
-
-.roadmap-con .r-tit {
-  font-size: 1.2rem;
-  font-weight: 800;
-  line-height: 1.2em;
-  padding: 0.2em 0;
-  /* letter-spacing: -0.95px; */
-}
-
-.roadmap-con p {
-  margin: 0.5em 0;
 }
 
 .c-team {
