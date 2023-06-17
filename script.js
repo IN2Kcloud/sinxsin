@@ -8,7 +8,7 @@ const currentFrame = index => (
   `./result3/male${(index + 1).toString().padStart(4, '0')}.png`
 );
 const images = []
-const cyberfiction = {
+const sinxsin = {
   frame: 0
 };
 for (let i = 0; i < frameCount; i++) {
@@ -16,7 +16,7 @@ for (let i = 0; i < frameCount; i++) {
   img.src = currentFrame(i);
   images.push(img);
 }
-gsap.to(cyberfiction, {
+gsap.to(sinxsin, {
   frame: frameCount - 1,
   snap: "frame",
   scrollTrigger: {
@@ -27,7 +27,7 @@ gsap.to(cyberfiction, {
 images[0].onload = render;
 function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(images[cyberfiction.frame], 0, 0);
+  context.drawImage(images[sinxsin.frame], 0, 0);
 }
 gsap.timeline({
   scrollTrigger: {
