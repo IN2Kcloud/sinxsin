@@ -1,3 +1,12 @@
+const loadingElement = document.querySelector('.loading');
+
+function removeLoadingElement() {
+  loadingElement.removeEventListener('transitionend', removeLoadingElement);
+  loadingElement.parentNode.removeChild(loadingElement);
+}
+
+loadingElement.addEventListener('transitionend', removeLoadingElement);
+
 gsap.registerPlugin(ScrollTrigger);
 const canvas = document.getElementById("sin-intro");
 const context = canvas.getContext("2d");
@@ -79,7 +88,4 @@ gsap.timeline({
   .to('.button-round', { color: '#171010', backgroundColor: '#fff', border: '1px solid #fff' })
 window.addEventListener('load', () => {
   document.body.classList.remove('before-load');
-});
-document.querySelector('.loading').addEventListener('transitionend', (e) => {
-  document.body.removeChild(e.currentTarget);
 });
