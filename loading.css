@@ -1,4 +1,3 @@
-/* ë¡œë”©ê´€ë ¨ */
 .loading {
   display: flex;
   align-items: center;
@@ -13,17 +12,14 @@
   opacity: 0;
   transition: 0.5s;
 }
-
 .before-load .loading {
   opacity: 1;
 }
-
 @keyframes loading-spin {
   100% {
     transform: rotate(360deg);
   }
 }
-
 @keyframes loading-circle-ani {
   0% {
     stroke-dashoffset: 157;
@@ -35,23 +31,18 @@
     stroke-dashoffset: -157;
   }
 }
-
 .loading-circle {
   width: 100px;
   height: 100px;
   animation: loading-spin 2s infinite;
 }
-
 .loading-circle img { 
   width: 100px;
   height: 100px;
-  /* animation: loading-circle-ani 1s infinite; */
 }
-
 .loading-circle circle {
   stroke: #171010;
   stroke-width: 4;
-  /* getTotalLength()ë¡œ strokeì˜ ê¸¸ì´ë¥¼ ì–»ì–´ì˜¬ ìˆ˜ ìžˆìŒ */
   stroke-dasharray: 157, 157;
   stroke-dashoffset: 0;
   fill: transparent;

@@ -1,12 +1,10 @@
 @media (orientation: portrait) {
-  /* Portrait(ì„¸ë¡œ) ëª¨ë“œì¼ ë•Œ ì ìš©í•  CSS */
   .main-sins-wrap span img {
     width: 320px;
     margin: 0 -50px -6px;
   }
 }
 @media (orientation: landscape) {
-  /* Landscape(ê°€ë¡œ) ëª¨ë“œì¼ ë•Œ ì ìš©í•  CSS */
   canvas {
     height: 100vh;
   }
@@ -47,22 +45,14 @@
     flex-direction: row;
   }
 }
-
 @media (min-width: 600px) {
-  .notice {
-    display: inline-block;
-  }
   .member {
     margin-top: -40vh;
   }
   .member-con {
     width: 500px;
   }
-  .roadmap-con {
-    width: calc(50% - 1rem);
-  }
 }
-
 @media (min-width: 1024px) {
   body {
     font-size: 0.9rem;
@@ -78,9 +68,6 @@
   }
   .team-copy {
     margin: 10vh;
-  }
-  .roadmap-con {
-    width: calc(33.333% - 1rem);
   }
   .r-tit {
     font-size: 1.2rem;
@@ -98,7 +85,6 @@
     font-size: 11vw;
   }
 }
-
 @media (min-width: 1240px) {
   .member {
     margin-top: -60vh;
