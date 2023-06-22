@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
 const canvas = document.getElementById("sin-intro");
 const context = canvas.getContext("2d");
 canvas.width = 1920;
@@ -8,27 +7,15 @@ const frameCount = 300;
 const currentFrame = index => (
   `./result3/male${(index + 1).toString().padStart(4, '0')}.png`
 );
-const images = [];
+const images = []
 const sinxsin = {
   frame: 0
 };
 for (let i = 0; i < frameCount; i++) {
   const img = new Image();
-  const imgSrc = currentFrame(i);
-  fetch(imgSrc)
-    .then(response => {
-      if (response.ok) {
-        img.src = imgSrc;
-        images.push(img);
-      } else {
-        console.error(`Image ${imgSrc} not found.`);
-      }
-    })
-    .catch(error => {
-      console.error(`Failed to fetch image ${imgSrc}.`, error);
-    });
+  img.src = currentFrame(i);
+  images.push(img);
 }
-
 gsap.to(sinxsin, {
   frame: frameCount - 1,
   snap: "frame",
@@ -37,14 +24,10 @@ gsap.to(sinxsin, {
   },
   onUpdate: render
 });
-
 images[0].onload = render;
-
 function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
-  if (sinxsin.frame < images.length) {
-    context.drawImage(images[sinxsin.frame], 0, 0);
-  }
+  context.drawImage(images[sinxsin.frame], 0, 0);
 }
 gsap.timeline({
   scrollTrigger: {
@@ -93,7 +76,8 @@ gsap.timeline({
 })
   .to('.c-roadmap', { color: '#fff', backgroundColor: '#171010' })
   .to('header', { color: '#fff' })
-  .to('.button-round', { color: '#171010', backgroundColor: '#fff', border: '1px solid #fff' })
+  .to('.button-round', { color: '#171010', backgroundColor: '#fff', border: '1px solid #fff' 
+})
 window.addEventListener('load', () => {
   document.body.classList.remove('before-load');
 });
