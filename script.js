@@ -3,7 +3,7 @@ const canvas = document.getElementById("sin-intro");
 const context = canvas.getContext("2d");
 canvas.width = 1920;
 canvas.height = 1080;
-const frameCount = 300;
+const frameCount = 124;
 const currentFrame = index => (
   `./result3/male${(index + 1).toString().padStart(4, '0')}.png`
 );
