@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Times New Roman', 'gilroy', 'Urbanist', 'Noto Sans KR', sans-serif;
+  font-family: 'Times New Roman', 'gilroy', 'Urbanist', 'Noto Sans KR', 'sans-serif';
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.4em;
