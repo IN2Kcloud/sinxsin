@@ -15,14 +15,15 @@ div, span, section, header, footer, p, a, nav {
 	box-sizing: border-box;
 }
 .t-bold {
-  font-weight: 800;
+  font-weight: 100;
 }
 .t-normal {
-  font-weight: 400;
+  font-weight: 50;
 }
 .t-stroke-white {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+  letter-spacing: 2px;
 }
 .t-left {
 	text-align: left;
@@ -37,8 +38,7 @@ div, span, section, header, footer, p, a, nav {
 	padding: 0.3em 0;
 }
 .main-copy-wrap {
-	font-weight: 200;
-	color: #f1f1f1;
-	font-family: 'Blackout';
-	-webkit-text-stroke: 0.1px #171010;   
+	font-weight: 100;
+	color: #000000;
+	font-family: 'Old London', 'Blackout', 'Times New Roman';
 }
