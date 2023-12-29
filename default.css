@@ -37,6 +37,11 @@ div, span, section, header, footer, p, a, nav {
 .s-tit {
 	padding: 0.3em 0;
 }
+@font-face {
+	font-family: 'Old London';
+	src: url('OldLondon.ttf') format('ttf'),
+	     url('Olondona.otf') format('otf'),
+  }
 .main-copy-wrap {
 	font-weight: 100;
 	color: #000000;
