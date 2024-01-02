@@ -39,9 +39,10 @@ div, span, section, header, footer, p, a, nav {
 }
 @font-face {
 	font-family: 'Old London';
-	src: url('OldLondon.ttf') format('ttf'),
-	     url('Olondona.otf') format('otf'),
-  }
+	src: url('OldLondon.ttf') format('truetype'),
+	     url('Olondona.otf') format('opentype');
+}
+
 .main-copy-wrap {
 	font-weight: 100;
 	color: #000000;
